@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Muli:500|Poppins&display=swap');
+
+$title:'Muli', sans-serif;
+
+body {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+h2 {
+  font-family: $title;
+}
+
+a {
+  text-decoration:none !important;
+  color: #e74c3c !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+.app {
+  width:80%;
+  padding:2%;
+  margin:5vh auto 5vh auto;
+  border: 2px solid #e74c3c ;
+  border-radius: 20px;
+  .app-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    margin: auto;
+    padding: 0 15px 0 15px;
+    .app-title {
+      font-size: 2.5em;
+      font-weight: 700;
+      .app__subtitle {
+        font-weight:300;
+      }
+    }
+}
+}
+
+.recipe__button {
+  display: block;
+  margin: 0 auto;
+  border: solid 2px #e74c3c;
+  background: transparent;
+  padding: 0.4rem 0.6rem;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.recipe__box {
+  background: #fff;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  filter: drop-shadow(0px 5px 3px grey);
+  text-align: left;
+  overflow: hidden;
+  .recipe__text {
+    margin-left: 15px;
+    .recipe__title {
+  color: #e74c3c;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1.8rem 0 0.2rem 0;
+  font-family: $title;
+}
+.recipe__subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  span {
+    text-transform: none;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}
+  }
+}
+
+.active-recipe {
+  margin: 0 auto;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.active-recipe__img {
+  height: 500px;
+  width: 100%;
+}
+
+.active-recipe__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.active-recipe__button {
+  border: solid 2px #e74c3c;
+  background: transparent;
+  padding: 0.2rem 0.9rem;
+  margin:0 auto 1rem auto;
+  border-radius: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  width:30%;
+  color:#e74c3c;
+}
+
+.universal-form {
+  width: 50vw;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    label {
+      font-weight: bold;
+      margin-bottom: .5rem;
+    }
+    input,textarea {
+    background: none;
+    outline: none;
+    border: 1px solid #e74c3c;
+    font-size: 1em;
+    padding: .5em;
+    border-radius: 5px;
+}
+}
+
+.input-group:last-child {
+  margin-bottom: 0;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.active-recipe .recipe__text {
+  padding-top: 20px;
+}
+
+.active-recipe__title {
+  font-style: italic;
+  font-weight: 200;
+}
